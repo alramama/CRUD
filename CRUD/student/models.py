@@ -7,7 +7,7 @@ class Stud(models.Model):
     hobbies = models.CharField(blank = True, max_length =255 )
     gender = models.CharField(blank = True, max_length =50 )
     education = models.CharField(blank = True, max_length =50 )
-    image = models.FileField(upload_to='student_image',blank = True)
+    image = models.FileField(upload_to='media',blank = True)
     age = models.CharField(blank = True,max_length =50 )
 
     class Meta:
