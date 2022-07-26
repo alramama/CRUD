@@ -38,7 +38,6 @@
                         <td>{{ value.hobbies }}</td>
                         <td>{{ value.gender }}</td>
                         <td>{{ value.education }}</td>
-                        <td>{% if value.image %}<img src="/media/{{ value.image }}" class="img img-responsive" width="100px">{% endif %}</td>
                         <td>{{ value.age }}</td>
                         <td><a class="btn btn-success btn-sm" href="/update_stud/{{ value.id }}">  Edit</a><a class="btn btn-danger btn-sm" onclick="return confirm('Do you really want to delete this item!')" href="/delete_stud/{{ value.id }}"> Delete</a></td>
                     </tr>
